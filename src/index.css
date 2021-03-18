@@ -1,13 +1,223 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100&display=swap');
+
+* {
+  font-family: 'Catamaran';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  background: ghostwhite;
+}
+
+.newSubField {
+  background: #222;
+  padding: 7px;
+  text-align: center;
+}
+
+.newSubField input {
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px;
+  color: white;
+  font-weight: lighter;
+}
+
+.newSubField button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px;
+  margin-left: 10px;
+  color: rgba(250, 250, 250, 0.7);
+  font-weight: lighter;
+}
+
+button:hover {
+  outline: none;
+  background: ghostwhite;
+  color: #222;
+  cursor: pointer;
+}
+
+button:active {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.cont {
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+  background: white;
+  border-radius: 2px;
+  padding: 20px 10px;
+  margin: 15px auto;
+  width: 42%;
+  position: relative;
+}
+
+.subreddit {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -8px;
+  left: 10px;
+}
+
+.fab {
+  color: red;
+  font-size: 1em;
+  margin-right: 2px;
+}
+
+.mainImg {
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.noPic {
+  border: 1px solid slategray;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.3);
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+.social {
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  width: max-content;
+  padding: 2px 5px;
+  margin: auto;
+  position: relative;
+}
+
+.social p {
+  display: inline;
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+}
+
+.socialIcon {
+  width: 15px;
+  margin: 0 2.5px 0 10px;
+}
+
+.headerImage {
+  width: 80%;
+  height: 25px;
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.authorImage {
+  width: 30%;
+  height: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.imageImage {
+  transform: scale(1.05);
+  border-radius: 5px;
+  width: 95%;
+  margin: 10px 5px;
+}
+
+.placeholderSubreddit {
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+.subredditImage {
+  margin: 3px;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.PlaceholderSocialIcon {
+  border-radius: 4px;
+}
+
+.fade {
+  opacity: 0.6;
+}
+
+.comment {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-size: 0.8em;
+  margin: 10px auto;
+  padding: 15px 15px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1.8em;
+  color: #ed422f;
+  position: relative;
+  right: -42%;
+}
+
+.closeButton:hover {
+  background: transparent;
+  border: none;
+  color: #ce2512;
+}
+
+.likeSpan {
+  display: block;
+  margin: 15px auto 0;
+  text-align: right;
+}
+
+.like {
+  color: #ff6868;
+  margin-right: 2px;
+  font-size: 0.9em;
+}
+
+.authorComment {
+  display: inline;
+  margin-right: 5px;
+  font-size: 0.7em;
+}
+
+.commentIcon:hover {
+  cursor: pointer;
+}
+
+.commentSectionPh {
+  text-align: center;
+}
+
+.commentPh {
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 7px;
+  display: block;
+  margin: 2% auto;
 }
